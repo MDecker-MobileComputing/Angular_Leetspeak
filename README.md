@@ -41,6 +41,22 @@ ng serve --open
 
 ----
 
+## App served by GitHub Pages ##
+
+
+<br>
+
+The app was generated for serving by *GitHub Pages* with the following command:
+```
+ng build --output-path docs --base-href https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
+```
+
+Access the app via *GitHub Pages*: https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
+
+<br>
+
+----
+
 ## License ##
 
 <br>
