@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LeetspeakService } from './leetspeak.service';
 
 @Component({
   selector: 'mide-root',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  /**
+   * Konstruktor für Dependency-Injection.
+   */
+  constructor(private leetspeakService: LeetspeakService) {}
 
   /**
    * Diese Member-Variable ist mit einem Two-Way-Binding an das <textarea>-Element
@@ -24,7 +30,9 @@ export class AppComponent {
    */
   public onUebersetzenButton() {
 
-    this.ausgabeText = this.eingabeText.trim();
+    const eingabeTrimmed = this.eingabeText.trim();
+
+    this.ausgabeText = this.leetspeakService.ubersetzteNachLeetspeak(eingabeTrimmed);
   }
 
   /**
