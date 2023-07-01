@@ -1,2 +1,12 @@
 <h1>Leetspeek-Translator</h1>
 
+
+<input type="text"
+       [(ngModel)]="eingabeText"
+       placeholder="Text zum Übersetzen"/>
+
+<br><br>
+
+<button (click)="onUebersetzenButton()" >Nach Leetspeek übersetzen</button>
+&nbsp;
+<button (click)="onLoeschenButton()"    >Eingabefeld löschen</button>
