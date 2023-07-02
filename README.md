@@ -37,12 +37,20 @@ Test the app in the browser:
 ng serve --open
 ```
 
+You can also use the following script defined in `package.json`:
+```
+npm start
+```
+
 <br>
 
 ----
 
 ## App served by GitHub Pages ##
 
+<br>
+
+Access the app via *GitHub Pages*: https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
 
 <br>
 
@@ -51,7 +59,10 @@ The app was generated for serving by *GitHub Pages* with the following command:
 ng build --output-path docs --base-href https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
 ```
 
-Access the app via *GitHub Pages*: https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
+You can also use the following script defined in `package.json`:
+```
+npm run build
+```
 
 <br>
 
