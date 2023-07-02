@@ -12,12 +12,6 @@ import { ClipboardService } from 'ngx-clipboard';
 export class AppComponent {
 
   /**
-   * Konstruktor für Dependency-Injection.
-   */
-  constructor( private leetspeakService: LeetspeakService,
-               private clipboardService: ClipboardService ) {}
-
-  /**
    * Diese Member-Variable ist mit einem Two-Way-Binding an das <textarea>-Element
    * für die Eingabe des zu übersetzenden Textes gebunden.
    */
@@ -28,6 +22,14 @@ export class AppComponent {
    * für die Ausgabe des zu übersetzten Textes gebunden.
    */
   public ausgabeText = "";
+
+
+  /**
+   * Konstruktor für Dependency-Injection.
+   */
+  constructor( private leetspeakService: LeetspeakService,
+               private clipboardService: ClipboardService ) {}
+
 
   /**
    * Event-Handler-Methode für Button "Nach Leetspeek übersetzen".
