@@ -17,7 +17,7 @@ export class AppComponent {
    */
   public eingabeText = "";
 
-    /**
+  /**
    * Diese Member-Variable ist mit einem Two-Way-Binding an das <textarea>-Element
    * für die Ausgabe des zu übersetzten Textes gebunden.
    */
