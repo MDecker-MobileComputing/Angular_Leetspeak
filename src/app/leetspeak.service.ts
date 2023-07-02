@@ -21,7 +21,7 @@ export class LeetspeakService {
                       .replace(/l/gi, "1") // auch "i" wird schon auf Ziffer "1" abgebildet
                       .replace(/o/gi, "0")
                       .replace(/s/gi, "5")
-                      .replace(/z/gi, "2");    return "gammel";
+                      .replace(/z/gi, "2");
   }
 
 }

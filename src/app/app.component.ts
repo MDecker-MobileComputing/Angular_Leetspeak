@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { LeetspeakService } from './leetspeak.service';
 
+import { ClipboardService } from 'ngx-clipboard';
+
+
 @Component({
   selector: 'mide-root',
   templateUrl: './app.component.html',
@@ -11,7 +14,8 @@ export class AppComponent {
   /**
    * Konstruktor für Dependency-Injection.
    */
-  constructor(private leetspeakService: LeetspeakService) {}
+  constructor( private leetspeakService: LeetspeakService,
+               private clipboardService: ClipboardService ) {}
 
   /**
    * Diese Member-Variable ist mit einem Two-Way-Binding an das <textarea>-Element
@@ -42,6 +46,18 @@ export class AppComponent {
 
     console.log("Lösch-Button gedrückt.");
     this.eingabeText = "";
+  }
+
+  /**
+   * Event-Handler-Methode für Button "In Zwischenablage kopieren".
+   * <br><br>
+   *
+   * Angular-spezifische Bibliothek, die für Kopieren in Zwischenablage
+   * benutzt wird: https://github.com/maxisam/ngx-clipboard
+   */
+  public onZwischenablageButton() {
+
+    this.clipboardService.copy(this.ausgabeText);
   }
 
 }
