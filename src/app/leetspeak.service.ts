@@ -11,7 +11,7 @@ import { Injectable } from '@angular/core';
 })
 export class LeetspeakService {
 
-  public ubersetzteNachLeetspeak(eingabeText: string): string {
+  public ubersetzteNachLeetspeak( eingabeText: string ): string {
 
     return eingabeText.replace( /a/gi , "4" )
                       .replace( /b/gi , "8" )
