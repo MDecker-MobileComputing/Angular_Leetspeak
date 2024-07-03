@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from "@angular/forms";
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
 import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
@@ -12,8 +13,9 @@ import { ClipboardModule } from 'ngx-clipboard';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    ClipboardModule // für Kopieren von Übersetzungsergebnis in Zwischenablage
+    ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
