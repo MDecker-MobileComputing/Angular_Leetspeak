@@ -2,9 +2,8 @@
 
 <br>
 
-This repository contains a simple [Angular](https://angular.io/) app that translate text input to [Leetspeak](https://en.wikipedia.org/wiki/Leet).
-
-
+Dieses Repository enthält eine einfach [Angular](https://angular.io/)-App, um einen eingegeben Text
+nach [Leetspeak](https://en.wikipedia.org/wiki/Leet) zu übersetzen.
 
 <br>
 
@@ -14,67 +13,9 @@ This repository contains a simple [Angular](https://angular.io/) app that transl
 
 <br>
 
-----
+Die App wird mit [GitHub Pages](https://pages.github.com/) unter der folgenden URL bereitgestellt:
 
-## App served by GitHub Pages ##
-
-<br>
-
-Access the app via [GitHub Pages](https://pages.github.com/):
-https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
-
-<br>
-
-The app was generated for serving by *GitHub Pages* with the following command:
-```
-ng build --configuration production --base-href /Angular_Leetspeak/
-```
-
-You can also use the following script defined in `package.json`:
-```
-npm run build:pages
-```
-
-The `build:pages` script also copies `docs/index.html` to `docs/404.html` so that direct URL calls work with Angular routing on GitHub Pages.
-
-<br>
-
-GitHub Pages settings for this repository:
-* Source: *Deploy from a branch*
-* Branch: *main*
-* Folder: */docs*
-
-<br>
-
-----
-
-## Commands ##
-
-<br>
-
-This project was created with the following CLI command:
-```
-ng new LeetSpeak --skip-tests --prefix=mide
-```
-
-<br>
-
-Check the syntax of the project:
-```
-ng lint
-```
-
-<br>
-
-Test the app in the browser:
-```
-ng serve
-```
-
-You can also use the following script defined in `package.json`:
-```
-npm start
-```
+   https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
 
 <br>
 
