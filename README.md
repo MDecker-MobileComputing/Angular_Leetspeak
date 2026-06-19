@@ -1,14 +1,16 @@
-# LeetSpeak #
+# Angular-App: LeetSpeak-Übersetzer #
 
 <br>
 
 This repository contains a simple [Angular](https://angular.io/) app that translate text input to [Leetspeak](https://en.wikipedia.org/wiki/Leet).
 
+
+
 <br>
 
 **Example:**
-* Input:  *"The quick brown fox jumps over the lazy dog."*
-* Output: *"Th3 qu1ck 8r0wn f0x jump5 0v3r th3 142y d09."*
+* Eingabe: *"Falsches Üben von Xylophonmusik quält jeden größeren Zwerg."*
+* Ausgabe: *"F415ch35 Ü83n v0n Xy10ph0nmu51k quä1t j3d3n 9röß3r3n 2w3r9."*
 
 <br>
 
