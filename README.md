@@ -27,13 +27,22 @@ https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
 
 The app was generated for serving by *GitHub Pages* with the following command:
 ```
-ng build --output-path docs --base-href https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
+ng build --configuration production --base-href /Angular_Leetspeak/
 ```
 
 You can also use the following script defined in `package.json`:
 ```
-npm run build
+npm run build:pages
 ```
+
+The `build:pages` script also copies `docs/index.html` to `docs/404.html` so that direct URL calls work with Angular routing on GitHub Pages.
+
+<br>
+
+GitHub Pages settings for this repository:
+* Source: *Deploy from a branch*
+* Branch: *main*
+* Folder: */docs*
 
 <br>
 
@@ -59,7 +68,7 @@ ng lint
 
 Test the app in the browser:
 ```
-ng serve --open
+ng serve
 ```
 
 You can also use the following script defined in `package.json`:

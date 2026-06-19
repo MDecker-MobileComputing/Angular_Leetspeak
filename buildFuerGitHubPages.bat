@@ -1,2 +1,3 @@
 
-ng build --output-path docs --base-href https://mdecker-mobilecomputing.github.io/Angular_Leetspeak/
+ng build --configuration production --base-href /Angular_Leetspeak/
+copy /Y docs\index.html docs\404.html >nul
