@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --open",
     "build": "ng build",
     "build:pages": "ng build --configuration production --base-href /Angular_Leetspeak/",
     "postbuild:pages": "copy /Y docs\\index.html docs\\404.html >nul",
